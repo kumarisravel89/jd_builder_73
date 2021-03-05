@@ -1,0 +1,335 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-26 15:16+0530\n"
+"PO-Revision-Date: 2021-02-26 15:36+0530\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: .\jd_builder\settings.py:95
+msgid "English"
+msgstr "Englisch"
+
+#: .\jd_builder\settings.py:96
+msgid "germany"
+msgstr "Deutschland"
+
+#: .\jd_builder\urls.py:24
+msgid "^"
+msgstr "^"
+
+#: .\templates\index.html:46
+msgid "Toggle navigation"
+msgstr "Navigation umschalten"
+
+#: .\templates\index.html:55
+msgid "NEUBOARD"
+msgstr "NEUBOARD"
+
+#: .\templates\index.html:72 .\templates\sign_up.html:70
+msgid " Sign Up"
+msgstr "Anmeldung"
+
+#: .\templates\index.html:74 .\templates\sign_in.html:52
+msgid "Sign In"
+msgstr "Einloggen"
+
+#: .\templates\index.html:85
+msgid "Select Language"
+msgstr "Sprache auswählen"
+
+#: .\templates\index.html:97
+msgid "Home"
+msgstr "Zuhause"
+
+#: .\templates\index.html:99
+msgid "Product Tour"
+msgstr "Produkttour"
+
+#: .\templates\index.html:101 .\templates\index.html.py:227
+msgid "Pricing"
+msgstr "Preisgestaltung"
+
+#: .\templates\index.html:103
+msgid "About Us"
+msgstr "Über uns"
+
+#: .\templates\index.html:125
+msgid "Making your life easier with complete Job Description."
+msgstr ""
+"Erleichtern Sie sich das Leben mit der vollständigen Stellenbeschreibung."
+
+#: .\templates\index.html:128
+msgid "As a Useful Communication Tool"
+msgstr "Als nützliches Kommunikationsmittel"
+
+#: .\templates\index.html:130
+msgid "To Help Identify the Right Employees for a Job"
+msgstr "Um die richtigen Mitarbeiter für einen Job zu identifizieren"
+
+#: .\templates\index.html:132
+msgid "To Help in the Interactive Process"
+msgstr "Hilfe im interaktiven Prozess"
+
+#: .\templates\index.html:134
+msgid "To Describe Legitimate Minimum Qualifications"
+msgstr "Beschreibung legitimer Mindestqualifikationen"
+
+#: .\templates\index.html:153
+msgid "Flat & Clean Admin Theme"
+msgstr "Flat & Clean Admin Theme"
+
+#: .\templates\index.html:155 .\templates\index.html.py:175
+msgid ""
+"Lorem ipsum dolor sit amet, ut pri munere perfecto sadipscing, nam habeo "
+"legere disputationi ea."
+msgstr ""
+"Lorem ipsum Karotten, also die erste Aufgabe, Sadipscing zu beenden, weil "
+"ich diese Debatte gelesen habe."
+
+#: .\templates\index.html:158
+msgid "Live Preview"
+msgstr "Live Vorschau"
+
+#: .\templates\index.html:159
+msgid "Get It Now"
+msgstr "Hol es dir jetzt"
+
+#: .\templates\index.html:173
+msgid "START BUILDING YOUR RESPONSIVE JOB DESCRIPTION"
+msgstr "Beginnen Sie mit dem Aufbau Ihrer reaktionsschnellen Jobbeschreibung"
+
+#: .\templates\index.html:186
+msgid "EXISTING TEMPLATE"
+msgstr "BESTEHENDE VORLAGE"
+
+#: .\templates\index.html:187
+msgid ""
+"The Tempalte which is already created you can edit the Tempalte with your "
+"ideas and interest"
+msgstr ""
+"Das bereits erstellte Tempalte können Sie mit Ihren Ideen und Ihrem "
+"Interesse bearbeiten"
+
+#: .\templates\index.html:195
+msgid "NEW TEMPLATE"
+msgstr "NEUE VORLAGE"
+
+#: .\templates\index.html:196
+msgid "The Tempalte which Your are going to create with ideas and interest"
+msgstr "Das Tempalte, das Ihr mit Ideen und Interesse erschaffen werdet"
+
+#: .\templates\index.html:204
+msgid "Static Version"
+msgstr "Statische Version"
+
+#: .\templates\index.html:205 .\templates\index.html.py:214
+msgid ""
+"Aeterno volumus recusabo vel id, id usu facilisi accusata, in quod inermis "
+"rationibus mea."
+msgstr ""
+"Er wollte Einwände dagegen erheben, dass Facilisi auf und von meinen Armen "
+"beschuldigt wurden."
+
+#: .\templates\index.html:213
+msgid "AngularJS Version"
+msgstr "AngularJS Version"
+
+#: .\templates\index.html:229
+msgid "Lorem ipsum dolor sit amet, id iusto oportere mel."
+msgstr "Lorem ipsum dolor sitzen amet, dass der Gerechte \"Schatz\" sein muss."
+
+#: .\templates\index.html:240
+msgid "Plan 1"
+msgstr "Plan 1"
+
+#: .\templates\index.html:243
+msgid "month"
+msgstr "Monat"
+
+#: .\templates\index.html:248 .\templates\index.html.py:280
+#: .\templates\index.html:312 .\templates\index.html.py:344
+msgid "Disk Storage"
+msgstr "Festplattenspeicherplatz"
+
+#: .\templates\index.html:250 .\templates\index.html.py:282
+#: .\templates\index.html:314 .\templates\index.html.py:346
+msgid "Bandwidth"
+msgstr "Bandbreite"
+
+#: .\templates\index.html:252 .\templates\index.html.py:284
+#: .\templates\index.html:316 .\templates\index.html.py:348
+msgid "E-Mail Accounts"
+msgstr "E-Mail-Adressen"
+
+#: .\templates\index.html:254 .\templates\index.html.py:286
+#: .\templates\index.html:318 .\templates\index.html.py:350
+msgid "Databases"
+msgstr "Datenbanken"
+
+#: .\templates\index.html:256 .\templates\index.html.py:288
+#: .\templates\index.html:320 .\templates\index.html.py:352
+msgid "Subdomains"
+msgstr "Subdomains"
+
+#: .\templates\index.html:260 .\templates\index.html.py:292
+#: .\templates\index.html:324 .\templates\index.html.py:356
+msgid "Purchase"
+msgstr "Kauf"
+
+#: .\templates\index.html:273
+msgid "Plan 2"
+msgstr "Plan 2"
+
+#: .\templates\index.html:276
+msgid "$20/month"
+msgstr "20 $ / Monat"
+
+#: .\templates\index.html:305
+msgid "Plan 3"
+msgstr "Plan 3"
+
+#: .\templates\index.html:308 .\templates\index.html.py:340
+msgid "$10/month"
+msgstr "10 $ / Monat"
+
+#: .\templates\index.html:337
+msgid "Plan 4"
+msgstr "Plan 4"
+
+#: .\templates\index.html:388
+msgid ""
+"Well-writtenjob descriptionsserve as communication tools that allow both "
+"employees and candidates to clearly understand the expectations of the role, "
+"its essentialduties, and the required competences, educational credentials, "
+"and experience for the role."
+msgstr ""
+"Gut geschriebene Stellenbeschreibungen dienen als Kommunikationsmittel, mit "
+"denen sowohl Mitarbeiter als auch Kandidaten die Erwartungen an die Rolle, "
+"ihre wesentlichen Aufgaben sowie die erforderlichen Kompetenzen, "
+"Bildungsnachweise und Erfahrungen für die Rolle klar verstehen können."
+
+#: .\templates\index.html:395
+msgid ""
+"Job Description is the method of putting requirements and content together."
+msgstr ""
+"Job Description ist die Methode zum Zusammenstellen von Anforderungen und "
+"Inhalten."
+
+#: .\templates\index.html:415
+msgid "Follow us on"
+msgstr "Folge uns auf"
+
+#: .\templates\sign_in.html:14
+msgid "NeuBoard"
+msgstr "NeuBoard"
+
+#: .\templates\sign_in.html:46
+msgid "NEU"
+msgstr "NEU"
+
+#: .\templates\sign_in.html:46
+msgid "BOARD"
+msgstr "TAFEL"
+
+#: .\templates\sign_in.html:56
+msgid "Login to access your account."
+msgstr "Melden Sie sich an, um auf Ihr Konto zuzugreifen."
+
+#: .\templates\sign_in.html:60
+msgid "Email"
+msgstr "Email"
+
+#: .\templates\sign_in.html:66 .\templates\sign_up.html:63
+msgid "Password"
+msgstr "Passwort"
+
+#: .\templates\sign_in.html:68
+msgid "Forgot Your Password?"
+msgstr "Passwort vergessen?"
+
+#: .\templates\sign_in.html:73
+msgid "Sign in"
+msgstr "Einloggen"
+
+#: .\templates\sign_in.html:75
+msgid "Not a member? Sign Up"
+msgstr "Kein Mitglied? Anmeldung"
+
+#: .\templates\sign_in.html:76
+msgid "OR"
+msgstr "ODER"
+
+#: .\templates\sign_in.html:77
+msgid "continue with facebook"
+msgstr "weiter mit Facebook"
+
+#: .\templates\sign_in.html:78
+msgid "continue with Google"
+msgstr "Fahren Sie mit Google fort"
+
+#: .\templates\sign_in.html:79
+msgid "continue with linkedin"
+msgstr "weiter mit linkedin"
+
+#: .\templates\sign_up.html:47
+msgid "   Sign Up"
+msgstr "Anmeldung"
+
+#: .\templates\sign_up.html:51
+msgid " Already a member? Sign In"
+msgstr "Schon ein Mitglied? Einloggen"
+
+#: .\templates\sign_up.html:54
+msgid " Name"
+msgstr "Name"
+
+#: .\templates\sign_up.html:55
+msgid "Enter your name"
+msgstr "Gib deinen Namen ein"
+
+#: .\templates\sign_up.html:58
+msgid " Email"
+msgstr "Email"
+
+#: .\templates\sign_up.html:59
+msgid "Enter your email"
+msgstr "Geben sie ihre E-Mail Adresse ein"
+
+#: .\templates\sign_up.html:62
+msgid " Password"
+msgstr "Passwort"
+
+#: .\templates\sign_up.html:66
+msgid " Retype Password"
+msgstr "Passwort erneut eingeben"
+
+#: .\templates\sign_up.html:67
+msgid "Retype your password"
+msgstr "Passwort erneut eingeben"
+
+#: .\templates\sign_up.html:71
+msgid " OR"
+msgstr "ODER"
+
+#: .\templates\sign_up.html:73
+msgid "  Continue with facebook"
+msgstr "Fahren Sie mit Facebook fort"
+
+#: .\templates\sign_up.html:74
+msgid " Continue  with Google"
+msgstr "Fahren Sie mit Google fort"
+
+#: .\templates\sign_up.html:75
+msgid " Continue with linkedin"
+msgstr "Fahren Sie mit LinkedIn fort"

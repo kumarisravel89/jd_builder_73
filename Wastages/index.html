@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    {% load i18n %}
+    {% load static %}
+    <title>NeuBoard | Web Application</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{% static 'js/plugins/bootstrap/css/bootstrap.min.css' %}">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/simple-line-icons.css' %}">
+    <!-- CSS Animate -->
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <!-- Carousel -->
+    <link rel="stylesheet" href="{% static 'js/plugins/carousel/owl.carousel.css' %}">
+    <!-- Custom styles for this theme -->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <!-- Feature detection -->
+    <script src="{% static 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="{% static 'js/vendor/html5shiv.js' %}"></script>
+    <script src="{% static 'js/vendor/respond.min.js' %}"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- NAVBAR
+    ================================================== -->
+    <header class="navbar-wrapper">
+        <div class="navbar navbar-default navbar-static-top home-navbar" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">{% trans "Toggle navigation" %}</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--logo start-->
+                    <div class="brand">
+                        <a href="index.html" class="logo">
+                            <i class="icon-layers"></i>
+                            <span>{% trans "NEUBOARD" %}</span></a>
+                    </div>
+                    <!--logo end-->
+                </div>
+
+
+
+              <!-- <div class="app_button">
+                <ul>
+                <li></li>
+                <li></li>
+             <ul>
+            </div> -->
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav pull-right" id="app_button">
+
+                    <li><a href="{% url 'authentication:signUp' %}" class="btn btn-primary btn-sm" id="Button1" style="display: table-caption;color: #ffffff;font-weight: 700;background-color: #27b6af;margin-right: 2px;">{% trans " Sign Up" %}</a>
+                    </li>
+                    <li><a href="{% url 'authentication:signIn' %}"  class="btn btn-primary btn-sm" id="Button2"  style="display: table-caption;color: #ffffff;font-weight: 700;background-color: #337ab7;margin-left: 2px;">{% trans "Sign In" %}</a>
+                    </li>
+
+
+                </ul>
+
+                <select class="form-control input-lg" style="display: table-caption;color: #ffffff;font-weight: 700;background-color: #27b6af;margin-right: 2px;" onchange="location = this.value;">
+                      {% get_current_language as LANGUAGE_CODE %}
+                      {% get_available_languages as LANGUAGES %}
+                      {% get_language_info_list for LANGUAGES as languages %}
+
+                    <option value="">{% trans "Select Language" %}</option>
+                      {% for language in languages %}
+                          <option value="/{{ language.code }}/" {% if language.code == LANGUAGE_CODE %} class="selected"{% endif %}><a href="/{{ language.code }}/" {% if language.code == LANGUAGE_CODE %} class="selected"{% endif %}>{{ language.name_local }}</a></option>
+                      {% endfor %}
+
+
+                </select>
+            </div>
+
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav pull-right" id="main-menu">
+                        <li><a href="#Home">{% trans "Home" %}</a>
+                        </li>
+                        <li><a href="#features">{% trans "Product Tour" %}</a>
+                        </li>
+                        <li><a href="#pricing">{% trans "Pricing" %}</a>
+                        </li>
+                        <li><a href="#testimonials">{% trans "About Us" %}</a>
+                        </li>
+                         <!--<li><a href="#team">Team</a>
+                        </li>
+                        <li><a href="#contact">Contact</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Intro section
+    ================================================== -->
+    <section id="Home">
+        <div class="overlay-bg">
+            <div class="container">
+                <div class="hero">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-8 col-md-5 col-lg-5 wow pulse">
+                            <header>
+                                <h1>{% trans "Making your life easier with complete Job Description." %}</h1>
+                            </header>
+                            <ul class="features">
+                                <li>{% trans "As a Useful Communication Tool" %}
+                                </li>
+                                <li>{% trans "To Help Identify the Right Employees for a Job" %}
+                                </li>
+                                <li>{% trans "To Help in the Interactive Process" %}
+                                </li>
+                                <li>{% trans "To Describe Legitimate Minimum Qualifications" %}
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="hidden-xs hidden-sm col-md-7 col-lg-7">
+                            <img src="{% static 'img/laptop.png' %}" class="wow fadeInRight" alt="laptop">
+                        </div>
+                        <!-- <div class="col-xs-6 col-sm-4 hidden-md hidden-lg">
+                            <img src="assets/img/mobile.png" class="wow fadeInRight" alt="mobile"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <div class="intro-text text-center">
+                <header>
+                    <h1>{% trans "Flat & Clean Admin Theme" %}</h1>
+                    <div class="spacer"></div>
+                    <p class="text-muted">{% trans "Lorem ipsum dolor sit amet, ut pri munere perfecto sadipscing, nam habeo legere disputationi ea." %}</p>
+                </header>
+                <p class="call-to-action">
+                    <a class="btn btn-primary btn-lg" href="javascript:void(0)" role="button">{% trans "Live Preview" %}</a>
+                    <a class="btn btn-success btn-lg" href="javascript:void(0)" role="button">{% trans "Get It Now" %}</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features Section
+    ================================================== -->
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <header>
+                        <h1>{% trans "START BUILDING YOUR RESPONSIVE JOB DESCRIPTION" %}</h1>
+                        <div class="spacer"></div>
+                        <p class="text-muted">{% trans "Lorem ipsum dolor sit amet, ut pri munere perfecto sadipscing, nam habeo legere disputationi ea." %}</p>
+                    </header>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 text-center wow fadeInUp">
+                    <div class="icon-wrapper">
+                        <p class="icon-circle">
+                            <i class="icon icon-screen-smartphone"></i>
+                        </p>
+                    </div>
+                    <h3>{% trans "EXISTING TEMPLATE" %}</h3>
+                    <p>{% trans "The Tempalte which is already created you can edit the Tempalte with your ideas and interest" %}</p>
+                </div>
+                <div class="col-sm-3 text-center wow fadeInUp">
+                    <div class="icon-wrapper">
+                        <p class="icon-circle">
+                            <i class="icon icon-graph"></i>
+                        </p>
+                    </div>
+                    <h3>{% trans "NEW TEMPLATE" %}</h3>
+                    <p>{% trans "The Tempalte which Your are going to create with ideas and interest" %}</p>
+                </div>
+                <div class="col-sm-3 text-center wow fadeInUp">
+                    <div class="icon-wrapper">
+                        <p class="icon-circle">
+                            <i class="icon fa fa-html5"></i>
+                        </p>
+                    </div>
+                    <h3>{% trans "Static Version" %}</h3>
+                    <p>{% trans "Aeterno volumus recusabo vel id, id usu facilisi accusata, in quod inermis rationibus mea." %}</p>
+                </div>
+                <div class="col-sm-3 text-center wow fadeInUp">
+                    <div class="icon-wrapper">
+                        <p class="icon-circle">
+                            <i class="icon fa fa-google"></i>
+                        </p>
+                    </div>
+                    <h3>{% trans "AngularJS Version" %}</h3>
+                    <p>{% trans "Aeterno volumus recusabo vel id, id usu facilisi accusata, in quod inermis rationibus mea." %}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing
+    ================================================== -->
+    <section id="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <header>
+                        <h1>{% trans "Pricing" %}</h1>
+                        <div class="spacer"></div>
+                        <p class="text-muted">{% trans "Lorem ipsum dolor sit amet, id iusto oportere mel." %} </p>
+                    </header>
+                </div>
+            </div>
+            <div class="row">
+                <div id="pricePlans">
+                    <div class="col-md-3">
+                        <ul id="plan1">
+                            <li class="plan wow zoomIn">
+                                <ul class="planContainer">
+                                    <li class="title">
+                                        <h2>{% trans "Plan 1" %}</h2>
+                                    </li>
+                                    <li class="price">
+                                        <p>$10/<span>{% trans "month" %}</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <ul class="options">
+                                            <li>1GB <span>{% trans "Disk Storage" %}</span>
+                                            </li>
+                                            <li>5GB <span>{% trans "Bandwidth" %}</span>
+                                            </li>
+                                            <li>5 <span>{% trans "E-Mail Accounts" %}</span>
+                                            </li>
+                                            <li>5 <span>{% trans "Databases" %}</span>
+                                            </li>
+                                            <li>3 <span>{% trans "Subdomains" %}</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="button"><a href="#">{% trans "Purchase" %}</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- End ul#plans -->
+                    </div>
+
+                    <div class="col-md-3">
+                        <ul id="plan2">
+                            <li class="plan wow zoomIn">
+                                <ul class="planContainer">
+                                    <li class="title">
+                                        <h2 class="bestPlanTitle">{% trans "Plan 2" %}</h2>
+                                    </li>
+                                    <li class="price">
+                                        <p class="bestPlanPrice">{% trans "$20/month" %}</p>
+                                    </li>
+                                    <li>
+                                        <ul class="options">
+                                            <li>3GB <span>{% trans "Disk Storage" %}</span>
+                                            </li>
+                                            <li>10GB <span>{% trans "Bandwidth" %}</span>
+                                            </li>
+                                            <li>10 <span>{% trans "E-Mail Accounts" %}</span>
+                                            </li>
+                                            <li>10 <span>{% trans "Databases" %}</span>
+                                            </li>
+                                            <li>6 <span>{% trans "Subdomains" %}</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="button"><a class="bestPlanButton" href="#">{% trans "Purchase" %}</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- End ul#plans -->
+                    </div>
+
+                    <div class="col-md-3">
+                        <ul id="plan3">
+                            <li class="plan wow zoomIn">
+                                <ul class="planContainer">
+                                    <li class="title">
+                                        <h2>{% trans "Plan 3" %}</h2>
+                                    </li>
+                                    <li class="price">
+                                        <p>{% trans "$10/month" %}</p>
+                                    </li>
+                                    <li>
+                                        <ul class="options">
+                                            <li>5GB <span>{% trans "Disk Storage" %}</span>
+                                            </li>
+                                            <li>20GB <span>{% trans "Bandwidth" %}</span>
+                                            </li>
+                                            <li>20 <span>{% trans "E-Mail Accounts" %}</span>
+                                            </li>
+                                            <li>20 <span>{% trans "Databases" %}</span>
+                                            </li>
+                                            <li>10 <span>{% trans "Subdomains" %}</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="button"><a href="#">{% trans "Purchase" %}</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- End ul#plans -->
+                    </div>
+
+                    <div class="col-md-3">
+                        <ul id="plan4">
+                            <li class="plan wow zoomIn">
+                                <ul class="planContainer">
+                                    <li class="title">
+                                        <h2>{% trans "Plan 4" %}</h2>
+                                    </li>
+                                    <li class="price">
+                                        <p>{% trans "$10/month" %}</p>
+                                    </li>
+                                    <li>
+                                        <ul class="options">
+                                            <li>10GB <span>{% trans "Disk Storage" %}</span>
+                                            </li>
+                                            <li>40GB <span>{% trans "Bandwidth" %}</span>
+                                            </li>
+                                            <li>100 <span>{% trans "E-Mail Accounts" %}</span>
+                                            </li>
+                                            <li>50 <span>{% trans "Databases" %}</span>
+                                            </li>
+                                            <li>20 <span>{% trans "Subdomains" %}</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="button"><a href="#">{% trans "Purchase" %}</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- End ul#plans -->
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Testimonials Sections
+    ================================================== -->
+    <section id="testimonials">
+        <div class="inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div id="testimonial-wrapper">
+
+                            <div class="item">
+                                <p>{% trans '"A job description is a document intended to provide job applicants with an outline of the main duties and responsibilities of the role for which they are applying.
+                                    "' %}</p>
+                                <div class="client-info">
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p>{% trans "Well-written job descriptions serve as communication tools that allow both employees and candidates to clearly understand the expectations of the role, its essential duties, and the required competences, educational credentials, and experience for the role." %}</p>
+                                <div class="client-info">
+                                    <!-- <div class="name">Steve Jobs</div>
+                                    <div class="position">Entrepreneur</div> -->
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p>{% trans "Job Description is the method of putting requirements and content together." %} </p>
+                                <div class="client-info">
+                                    <!-- <div class="name">Paul Rand</div>
+                                    <div class="position">Graphic Designer</div> -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer
+    ================================================== -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-8 col-sm-6 col-md-6 col-lg-6 text-right">
+                    <span>{% trans "Follow us on" %} </span>  <a href="javascript:void(0)" class="social facebook"><i class="fa fa-facebook"></i></a> <a href="javascript:void(0)" class="social twitter"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+    </footer>
+
+
+    <!--Global JS-->
+    <script src="{% static 'js/vendor/jquery-1.11.1.min.js' %}"></script>
+    <script src="{% static 'js/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/plugins/nav/jquery.nav.js' %}"></script>
+    <script src="{% static 'js/plugins/sticky/jquery.sticky.js' %}"></script>
+    <script src="{% static 'js/plugins/scrollTo/jquery.scrollTo.js' %}"></script>
+    <script src="{% static 'js/plugins/wow/wow.min.js' %}"></script>
+    <script src="{% static 'js/plugins/parallax/jquery.parallax-1.1.3.js' %}"></script>
+    <script src="{% static 'js/plugins/carousel/owl.carousel.js' %}"></script>
+    <script src="{% static 'js/src/app.js' %}"></script>
+</body>
+
+</html>
