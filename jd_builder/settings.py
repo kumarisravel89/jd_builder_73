@@ -83,10 +83,10 @@ WSGI_APPLICATION = 'jd_builder.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'x',
+        'NAME': 'jd_builder_db',
         'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
+        'PASSWORD': 'CrmFarm$2o2o',
+        'HOST': '139.59.70.150',
         'PORT': '3306',
     }
 }
